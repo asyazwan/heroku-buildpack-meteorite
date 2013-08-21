@@ -177,7 +177,7 @@ echo "Installing meteor" | indent
 
 # Using different folder to prevent install script form deleting packages file
 VENDORED_METEOR="$(mktmpdir meteor)"
-curl https://dl.dropboxusercontent.com/u/5576044/install.meteor.txt | HOME="$VENDORED_METEOR" /bin/sh | indent
+curl https://dl.dropboxusercontent.com/u/5576044/install.meteor.sh | HOME="$VENDORED_METEOR" /bin/sh | indent
 echo "Meteor installed" | indent
 
 echo "Installing packages" | indent
